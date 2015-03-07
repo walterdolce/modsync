@@ -1,4 +1,3 @@
-
 from behave import *
 from modsync.modsync import Modsync
 
@@ -7,6 +6,7 @@ from modsync.modsync import Modsync
 def step_impl(context):
     context.modsync = Modsync()
     context.run = context.modsync.run()
+
 
 @then(u'it should pass')
 def step_impl(context):
