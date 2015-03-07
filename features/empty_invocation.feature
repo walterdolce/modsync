@@ -4,5 +4,5 @@ Feature: Using modsync
   I should be able to use modsync for such functionality
 
   Scenario: Invoking modsync
-    When I invoke modsync
+    When I invoke modsync with no parameters
     Then it should pass
