@@ -14,5 +14,5 @@ setup(
         # TODO Python versions compatibility classifier
         # TODO OSes compatibility classifier
     ],
-    install_requires = ['watchdog']
+    install_requires=['watchdog']
 )
