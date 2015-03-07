@@ -1,1 +1,1 @@
-__author__ = 'walterdolce'
+import modsync
