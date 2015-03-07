@@ -13,5 +13,6 @@ setup(
         # TODO License classifier
         # TODO Python versions compatibility classifier
         # TODO OSes compatibility classifier
-    ]
+    ],
+    install_requires = ['watchdog']
 )
