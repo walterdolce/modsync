@@ -27,11 +27,11 @@ class Modsync:
             return 0
 
         self._observer = Observer()
-        event_handler = ModsyncEventHandler(self._observer, self._target)
+        event_handler = ModsyncEventHandler(self._observer, self._source, self._target)
         self._observer.schedule(event_handler, self._source, recursive=True)
         self._observer.start()
         try:
-            time.sleep(10)
+            time.sleep(2)
             pass
         except KeyboardInterrupt:
             self._observer.stop()
