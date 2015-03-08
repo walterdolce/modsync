@@ -2,6 +2,7 @@ import shutil
 import os
 import sys
 
+
 sys.dont_write_bytecode = True
 
 
@@ -20,8 +21,3 @@ def do_cleanup(context):
 
 def after_scenario(context, feature):
     do_cleanup(context)
-
-
-# def after_step(context, feature):
-#     if context.feature.status == 'failed':
-#         do_cleanup(context)
